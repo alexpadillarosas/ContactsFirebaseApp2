@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7C47741AAE9919BDA8FE803B /* Pods_ContactsFirebaseApp2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D2972A0673D8ED1456C555 /* Pods_ContactsFirebaseApp2.framework */; };
+		FADB616A27FB0F9300D354FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FADB616927FB0F9300D354FE /* AppDelegate.m */; };
+		FADB616D27FB0F9300D354FE /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FADB616C27FB0F9300D354FE /* SceneDelegate.m */; };
+		FADB617327FB0F9300D354FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADB617127FB0F9300D354FE /* Main.storyboard */; };
+		FADB617527FB0F9500D354FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADB617427FB0F9500D354FE /* Assets.xcassets */; };
+		FADB617827FB0F9500D354FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADB617627FB0F9500D354FE /* LaunchScreen.storyboard */; };
+		FADB617B27FB0F9500D354FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FADB617A27FB0F9500D354FE /* main.m */; };
+		FADB618227FB232F00D354FE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FADB618127FB232F00D354FE /* GoogleService-Info.plist */; };
+		FADB618B27FB24C300D354FE /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = FADB618627FB24C300D354FE /* Contact.m */; };
+		FADB618C27FB24C300D354FE /* ContactTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FADB618727FB24C300D354FE /* ContactTableViewCell.m */; };
+		FADB618D27FB24C300D354FE /* ContactsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FADB618827FB24C300D354FE /* ContactsTableViewController.m */; };
+		FADB618E27FB24C300D354FE /* FirestoreService.m in Sources */ = {isa = PBXBuildFile; fileRef = FADB618A27FB24C300D354FE /* FirestoreService.m */; };
+		FADB619127FB327300D354FE /* ContactDetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FADB619027FB327300D354FE /* ContactDetailsTableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		47D2972A0673D8ED1456C555 /* Pods_ContactsFirebaseApp2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContactsFirebaseApp2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51813804EBC245EC5FA68701 /* Pods-ContactsFirebaseApp2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactsFirebaseApp2.debug.xcconfig"; path = "Target Support Files/Pods-ContactsFirebaseApp2/Pods-ContactsFirebaseApp2.debug.xcconfig"; sourceTree = "<group>"; };
+		78874B6F89A65EBE0E32BFE7 /* Pods-ContactsFirebaseApp2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactsFirebaseApp2.release.xcconfig"; path = "Target Support Files/Pods-ContactsFirebaseApp2/Pods-ContactsFirebaseApp2.release.xcconfig"; sourceTree = "<group>"; };
+		FADB616527FB0F9300D354FE /* ContactsFirebaseApp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactsFirebaseApp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FADB616827FB0F9300D354FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FADB616927FB0F9300D354FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FADB616B27FB0F9300D354FE /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		FADB616C27FB0F9300D354FE /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		FADB617227FB0F9300D354FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FADB617427FB0F9500D354FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FADB617727FB0F9500D354FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FADB617927FB0F9500D354FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FADB617A27FB0F9500D354FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FADB618127FB232F00D354FE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FADB618327FB24C300D354FE /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
+		FADB618427FB24C300D354FE /* ContactsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsTableViewController.h; sourceTree = "<group>"; };
+		FADB618527FB24C300D354FE /* ContactTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactTableViewCell.h; sourceTree = "<group>"; };
+		FADB618627FB24C300D354FE /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
+		FADB618727FB24C300D354FE /* ContactTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactTableViewCell.m; sourceTree = "<group>"; };
+		FADB618827FB24C300D354FE /* ContactsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsTableViewController.m; sourceTree = "<group>"; };
+		FADB618927FB24C300D354FE /* FirestoreService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirestoreService.h; sourceTree = "<group>"; };
+		FADB618A27FB24C300D354FE /* FirestoreService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirestoreService.m; sourceTree = "<group>"; };
+		FADB618F27FB327300D354FE /* ContactDetailsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactDetailsTableViewController.h; sourceTree = "<group>"; };
+		FADB619027FB327300D354FE /* ContactDetailsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactDetailsTableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FADB616227FB0F9300D354FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C47741AAE9919BDA8FE803B /* Pods_ContactsFirebaseApp2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1B5145B2E24B19A7DA568F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47D2972A0673D8ED1456C555 /* Pods_ContactsFirebaseApp2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B16DEF8CC09430FF94EE5D55 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				51813804EBC245EC5FA68701 /* Pods-ContactsFirebaseApp2.debug.xcconfig */,
+				78874B6F89A65EBE0E32BFE7 /* Pods-ContactsFirebaseApp2.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FADB615C27FB0F9300D354FE = {
+			isa = PBXGroup;
+			children = (
+				FADB616727FB0F9300D354FE /* ContactsFirebaseApp2 */,
+				FADB616627FB0F9300D354FE /* Products */,
+				B16DEF8CC09430FF94EE5D55 /* Pods */,
+				A1B5145B2E24B19A7DA568F8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FADB616627FB0F9300D354FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FADB616527FB0F9300D354FE /* ContactsFirebaseApp2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FADB616727FB0F9300D354FE /* ContactsFirebaseApp2 */ = {
+			isa = PBXGroup;
+			children = (
+				FADB618127FB232F00D354FE /* GoogleService-Info.plist */,
+				FADB616827FB0F9300D354FE /* AppDelegate.h */,
+				FADB616927FB0F9300D354FE /* AppDelegate.m */,
+				FADB616B27FB0F9300D354FE /* SceneDelegate.h */,
+				FADB616C27FB0F9300D354FE /* SceneDelegate.m */,
+				FADB618327FB24C300D354FE /* Contact.h */,
+				FADB618627FB24C300D354FE /* Contact.m */,
+				FADB618427FB24C300D354FE /* ContactsTableViewController.h */,
+				FADB618827FB24C300D354FE /* ContactsTableViewController.m */,
+				FADB618527FB24C300D354FE /* ContactTableViewCell.h */,
+				FADB618727FB24C300D354FE /* ContactTableViewCell.m */,
+				FADB618927FB24C300D354FE /* FirestoreService.h */,
+				FADB618A27FB24C300D354FE /* FirestoreService.m */,
+				FADB617127FB0F9300D354FE /* Main.storyboard */,
+				FADB617427FB0F9500D354FE /* Assets.xcassets */,
+				FADB617627FB0F9500D354FE /* LaunchScreen.storyboard */,
+				FADB617927FB0F9500D354FE /* Info.plist */,
+				FADB617A27FB0F9500D354FE /* main.m */,
+				FADB618F27FB327300D354FE /* ContactDetailsTableViewController.h */,
+				FADB619027FB327300D354FE /* ContactDetailsTableViewController.m */,
+			);
+			path = ContactsFirebaseApp2;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FADB616427FB0F9300D354FE /* ContactsFirebaseApp2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FADB617E27FB0F9500D354FE /* Build configuration list for PBXNativeTarget "ContactsFirebaseApp2" */;
+			buildPhases = (
+				17777ABA88BEBAD48E51AC26 /* [CP] Check Pods Manifest.lock */,
+				FADB616127FB0F9300D354FE /* Sources */,
+				FADB616227FB0F9300D354FE /* Frameworks */,
+				FADB616327FB0F9300D354FE /* Resources */,
+				653745BE653DF235DCAE02C2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ContactsFirebaseApp2;
+			productName = ContactsFirebaseApp2;
+			productReference = FADB616527FB0F9300D354FE /* ContactsFirebaseApp2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FADB615D27FB0F9300D354FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					FADB616427FB0F9300D354FE = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = FADB616027FB0F9300D354FE /* Build configuration list for PBXProject "ContactsFirebaseApp2" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FADB615C27FB0F9300D354FE;
+			productRefGroup = FADB616627FB0F9300D354FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FADB616427FB0F9300D354FE /* ContactsFirebaseApp2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FADB616327FB0F9300D354FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADB617827FB0F9500D354FE /* LaunchScreen.storyboard in Resources */,
+				FADB618227FB232F00D354FE /* GoogleService-Info.plist in Resources */,
+				FADB617527FB0F9500D354FE /* Assets.xcassets in Resources */,
+				FADB617327FB0F9300D354FE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17777ABA88BEBAD48E51AC26 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ContactsFirebaseApp2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		653745BE653DF235DCAE02C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ContactsFirebaseApp2/Pods-ContactsFirebaseApp2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ContactsFirebaseApp2/Pods-ContactsFirebaseApp2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ContactsFirebaseApp2/Pods-ContactsFirebaseApp2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FADB616127FB0F9300D354FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADB618E27FB24C300D354FE /* FirestoreService.m in Sources */,
+				FADB618D27FB24C300D354FE /* ContactsTableViewController.m in Sources */,
+				FADB616A27FB0F9300D354FE /* AppDelegate.m in Sources */,
+				FADB618C27FB24C300D354FE /* ContactTableViewCell.m in Sources */,
+				FADB618B27FB24C300D354FE /* Contact.m in Sources */,
+				FADB617B27FB0F9500D354FE /* main.m in Sources */,
+				FADB616D27FB0F9300D354FE /* SceneDelegate.m in Sources */,
+				FADB619127FB327300D354FE /* ContactDetailsTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FADB617127FB0F9300D354FE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FADB617227FB0F9300D354FE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FADB617627FB0F9500D354FE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FADB617727FB0F9500D354FE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FADB617C27FB0F9500D354FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FADB617D27FB0F9500D354FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FADB617F27FB0F9500D354FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51813804EBC245EC5FA68701 /* Pods-ContactsFirebaseApp2.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ContactsFirebaseApp2/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blueradix.tutorial.ContactsFirebaseApp2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FADB618027FB0F9500D354FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78874B6F89A65EBE0E32BFE7 /* Pods-ContactsFirebaseApp2.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ContactsFirebaseApp2/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blueradix.tutorial.ContactsFirebaseApp2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FADB616027FB0F9300D354FE /* Build configuration list for PBXProject "ContactsFirebaseApp2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADB617C27FB0F9500D354FE /* Debug */,
+				FADB617D27FB0F9500D354FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FADB617E27FB0F9500D354FE /* Build configuration list for PBXNativeTarget "ContactsFirebaseApp2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADB617F27FB0F9500D354FE /* Debug */,
+				FADB618027FB0F9500D354FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FADB615D27FB0F9300D354FE /* Project object */;
+}
