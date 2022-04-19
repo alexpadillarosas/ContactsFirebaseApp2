@@ -179,6 +179,13 @@
     [[self.firestore collectionWithPath:@"Contacts"] addSnapshotListener:^(FIRQuerySnapshot * _Nullable snapshot, NSError * _Nullable error) {
         
         if(snapshot != nil){
+            
+            for( FIRDocumentChange * diff in [snapshot documentChanges]){
+                if([diff type] == FIRDocumentChangeTypeRemoved){
+                    NSLog(@"Removed Contact: %@", [[diff document] data]);
+                }
+            }
+            
             NSLog(@"Found %li documents in the db", [snapshot count]);
             if(completion){
                 NSMutableDictionary *contactsDictionary = [NSMutableDictionary new];

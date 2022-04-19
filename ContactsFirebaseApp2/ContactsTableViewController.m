@@ -44,14 +44,16 @@
         https://medium.com/@amyjoscelyn/blocks-and-closures-in-objective-c-2b763e9e0dc8
      */
     [service findAll:^(NSMutableDictionary * _Nonnull dictionary) {
+        
         if(dictionary != nil){
+            self->_contactsDictionary = [[NSMutableDictionary alloc] initWithCapacity:4];
             for (NSString* key in dictionary) {
                 [[self contactsDictionary] setObject:[dictionary objectForKey:key] forKey:key];
+                NSLog(@"Whole Item : %@", [dictionary objectForKey:key]);
             }
         }
         [[self contactsTableView] reloadData];//This is a trick needed to display data in the TableView
     }];
-    
 }
 
 #pragma mark - Table view data source
