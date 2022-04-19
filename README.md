@@ -1,6 +1,7 @@
 # ContactsFirebaseApp2
   
-
+In this part of the app we will be adding another screen to show a selected contact details.
+We will use a static table view
 
 1             |  2
 :-------------------------:|:-------------------------:
